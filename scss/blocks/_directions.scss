@@ -1,0 +1,49 @@
+.directions {
+  position: relative;
+  z-index: 10;
+  padding-top: 32px;
+  padding-bottom: 51px;
+  background-color: $accent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../img/directions/directions-bg.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+.directions__title {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.directions__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  gap: 67px 56px;
+
+  @include mediaSmallTablet {
+    gap: 40px;
+  }
+}
+
+.directions__card {
+  @include mediaSmallTablet {
+    text-align: center;
+  }
+}
+
+.directions__img {
+  margin-bottom: 15px;
+}
+
+.directions__text {
+  line-height: 130%;
+}

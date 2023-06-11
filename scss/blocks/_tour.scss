@@ -1,0 +1,85 @@
+.tour {
+  padding: 100px 0;
+  color: $black;
+
+  @include mediaTablet {
+    padding: 50px;
+  }
+}
+
+.tour__title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 77px;
+  text-transform: uppercase;
+
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
+}
+
+.tour__box {
+  font-size: 18px;
+  column-count: 2;
+  column-gap: 46px;
+  padding-bottom: 65px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid $border;
+
+  @include mediaTablet {
+    column-count: 1;
+    padding-bottom: 30px;
+  }
+}
+
+.tour__text {
+  margin-bottom: 35px;
+
+  @include mediaTablet {
+    margin-bottom: 20px;
+  }
+}
+
+.tour__text span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tour__info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 70px;
+
+  @include mediaDesktop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 15px;
+  }
+
+  @include mediaTablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mediaSmallTablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.tour__info-item {
+  text-align: center;
+  font-size: 58px;
+  font-family: $font-accent;
+  color: $accent;
+  line-height: 110%;
+
+  &:nth-child(4) {
+    min-width: 277px;
+  }
+}
+
+.tour__info-text {
+  font-size: 20px;
+  line-height: 125%;
+  color: $black;
+  font-family: $font-main;
+  font-weight: 500;
+}

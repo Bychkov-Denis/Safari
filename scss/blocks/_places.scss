@@ -1,0 +1,36 @@
+.places {
+  color: $black;
+  padding: 92px 0 100px;
+
+  @include mediaSmallTablet {
+    padding: 46px 0;
+  }
+}
+
+.places__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  gap: 32px;
+
+  @include mediaTablet {
+    gap: 20px;
+  }
+}
+
+.places__card {
+  transition: scale 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.places__img {
+  width: 100%;
+}
+
+.places__text {
+  padding: 12px 19px 14px;
+  border: 1px solid $border;
+  border-top: none;
+}

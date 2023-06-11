@@ -1,0 +1,21 @@
+// Base
+
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/mixins";
+
+//Blocks
+
+@import "./blocks/header";
+@import "./blocks/menu-btn";
+@import "./blocks/menu";
+@import "./blocks/places";
+@import "./blocks/directions";
+@import "./blocks/popular";
+@import "./blocks/map";
+@import "./blocks/about";
+@import "./blocks/gallery";
+@import "./blocks/tour";
+@import "./blocks/booking";
+@import "./blocks/footer";

@@ -1,0 +1,40 @@
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 111px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $white;
+  }
+
+  @include mediaSmallTablet {
+    display: inline-block;
+  }
+}
+
+.menu__btn-row {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $white;
+  border-radius: 1px;
+}

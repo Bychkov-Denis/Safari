@@ -1,0 +1,19 @@
+.map {
+  color: $black;
+  padding-bottom: 100px;
+
+  @include mediaTablet {
+    padding-bottom: 50px;
+  }
+}
+
+.map__title {
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.map__iframe {
+  @include mediaTablet {
+    height: 400px;
+  }
+}

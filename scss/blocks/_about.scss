@@ -1,0 +1,55 @@
+.about {
+  color: $black;
+  padding-bottom: 100px;
+
+  @include mediaTablet {
+    padding-bottom: 50px;
+  }
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 448px 640px;
+  gap: 32px;
+
+  @include mediaBigDesktop {
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  @include mediaTablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.about__title {
+  margin-bottom: 28px;
+}
+
+.about__text {
+  font-size: 18px;
+  margin-bottom: 34px;
+}
+
+.about .about__full {
+  color: $gray;
+  text-decoration: underline;
+}
+
+.about__popup {
+  background-image: url("./../img/about/video-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mediaTablet {
+    min-height: 400px;
+  }
+
+  @include mediaSmallTablet {
+    min-height: 280px;
+  }
+}
